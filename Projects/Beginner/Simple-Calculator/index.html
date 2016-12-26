@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mini Project 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="calc.css" type="text/css">
+  </head>
+  <body>
+    <h1>Steffins's Calculator</h1>
+    <div id="calculator">
+      <form>
+        <input type="text" id="display" disabled>
+        <br>
+        <input type="button" value="C" class="keys" onclick="addToScreen('c')">
+        <input type="button" value="<--" class="keys" onclick="backspace()">
+        <input type="button" value="X^3" class="keys" onclick="power()">
+        <input type="button" value="+" class="keys" onclick="addToScreen('+')">
+        <br>
+        <input type="button" value="9" class="keys" onclick="addToScreen('9')">
+        <input type="button" value="8" class="keys" onclick="addToScreen('8')">
+        <input type="button" value="7" class="keys" onclick="addToScreen('7')">
+        <input type="button" value="-" class="keys" onclick="addToScreen('-')">
+        <br>
+        <input type="button" value="6" class="keys" onclick="addToScreen('6')">
+        <input type="button" value="5" class="keys" onclick="addToScreen('5')">
+        <input type="button" value="4" class="keys" onclick="addToScreen('4')">
+        <input type="button" value="*" class="keys" onclick="addToScreen('*')">
+        <br>
+        <input type="button" value="3" class="keys" onclick="addToScreen('3')">
+        <input type="button" value="2" class="keys" onclick="addToScreen('2')">
+        <input type="button" value="1" class="keys" onclick="addToScreen('1')">
+        <input type="button" value="/" class="keys" onclick="addToScreen('/')">
+        <br>
+        <input type="button" value="0" class="keys" onclick="addToScreen('0')">
+        <input type="button" value="." class="keys" onclick="addToScreen('.')">
+        <input type="button" value="=" id="equal" onclick="answer()">
+      </form>
+    </div>
+    <script src="calc.js" type="text/javascript"></script>
+  </body>
+</html>
